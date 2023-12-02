@@ -229,9 +229,6 @@ public class UIBoolean extends javax.swing.JFrame {
             p[k] = Integer.parseInt(model.getValueAt(0, k).toString());
             v[k] = Integer.parseInt(model.getValueAt(1, k).toString());
         }
-        
-        Arrays.sort(p);
-        Arrays.sort(v);
 
         for(i = 0; i <= n; i++){
             t[i][0] = 0;
@@ -260,17 +257,15 @@ public class UIBoolean extends javax.swing.JFrame {
         
         while(i > 0){
             if(t[i][b] != t[i-1][b]){
-                x[q] = i - 1;
+                x[q] = i+1;
                 q++;
-                total += v[i-2];
+                total += v[i-1];
                 b -= p[i];
             }
             i--;
             aux = t[i][b];
         }
-        
-        String[] colunas = new String[1];
-        colunas[0] = "Itens";
+
         model = new DefaultTableModel(0, q);
         model.addRow(x);
         jTable4.setModel(model);
