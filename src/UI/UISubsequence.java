@@ -48,7 +48,7 @@ public class UISubsequence extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel2.setText("Quantos elementos a sequência1 possui?");
+        jLabel2.setText("Quantos elementos a sequência 1 possui?");
 
         jButton1.setText("Criar tabela");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +96,7 @@ public class UISubsequence extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
 
-        jLabel6.setText("Quantos elementos a sequência2 possui?");
+        jLabel6.setText("Quantos elementos a sequência 2 possui?");
 
         jButton3.setText("Criar tabela");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -144,8 +144,7 @@ public class UISubsequence extends javax.swing.JFrame {
                                         .addComponent(jButton1))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(179, 179, 179)
-                                        .addComponent(jButton2)
-                                        .addGap(39, 39, 39))
+                                        .addComponent(jButton2))
                                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel6)
